@@ -24,6 +24,7 @@ public class OrderServiceTest {
     static Order existingOrder = new Order(1000, 12);
         static class TestOrderRepository implements OrderRepository {
         @Override
+//      commit
         public Order findById(long id){
             if (id == existingOrder.getId()) {
                 return existingOrder;
